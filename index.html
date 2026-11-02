@@ -14,7 +14,7 @@ h2[id]{scroll-margin-top:16px}
 </head>
 <body>
 <h1>ReFit Privacy Policy</h1>
-<small>Last updated: 15 September 2026</small>
+<small>Last updated: 2 November 2026</small>
 <p>ReFit ("the app", published as <strong>ReFitIQ</strong>) is provided by Bradshaw Automation. This policy explains what information the app collects, how it is used, and the choices you have.</p>
 <p><strong>Looking for how to delete your account?</strong> See <a href="#account-deletion">Deleting your account and data</a>.</p>
 <h2>Information we collect</h2>
@@ -22,11 +22,13 @@ h2[id]{scroll-margin-top:16px}
 <li><strong>Account information</strong> — your email address, password (stored securely by our authentication provider), and the display name you choose.</li>
 <li><strong>Content you create</strong> — photos, voice recordings and their transcriptions, written notes, parts and teardown documentation, and the labels/QR codes you record while using the app.</li>
 <li><strong>Basic usage data</strong> — information needed to operate the app, such as which account created or changed a record.</li>
+<li><strong>Error reports</strong> — when something fails in the app, a report of what went wrong so we can fix it: the error message and where in the app it happened, the app and update version, whether the phone runs iOS or Android, and the job or part file involved.</li>
+<li><strong>Notification token</strong> — if you allow notifications, a push token for your phone so the app can send them to you. If you do not allow notifications, no token is collected.</li>
 </ul>
 <h2>How we use it</h2>
 <p>We use this information solely to provide and operate the app — to store your documentation, sync it across your shop's account, and let your team access the records they are permitted to see. We do not use your information for advertising, and we do not sell it.</p>
 <h2>Where it is stored</h2>
-<p>Your data is stored using Supabase, our database and hosting provider, on secured infrastructure. We share information only with service providers that help us operate the app, and only as needed to do so.</p>
+<p>Your data is stored using Supabase, our database and hosting provider, on secured infrastructure. We share information only with service providers that help us operate the app, and only as needed to do so. Voice recordings are sent to OpenAI, which turns them into text for us. Notifications are delivered through Expo's push notification service, which passes them to Apple or Google to reach your phone.</p>
 <h2 id="account-deletion">Deleting your account and data</h2>
 <p>This section applies to <strong>ReFitIQ</strong>, the mobile app provided by <strong>Bradshaw Automation</strong>. You can delete your account either from inside the app or by emailing us; you do not need to have the app installed.</p>
 
