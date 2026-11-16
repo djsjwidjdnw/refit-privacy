@@ -14,21 +14,27 @@ h2[id]{scroll-margin-top:16px}
 </head>
 <body>
 <h1>ReFit Privacy Policy</h1>
-<small>Last updated: 2 November 2026</small>
+<small>Last updated: 16 November 2026</small>
 <p>ReFit ("the app", published as <strong>ReFitIQ</strong>) is provided by Bradshaw Automation. This policy explains what information the app collects, how it is used, and the choices you have.</p>
 <p><strong>Looking for how to delete your account?</strong> See <a href="#account-deletion">Deleting your account and data</a>.</p>
 <h2>Information we collect</h2>
 <ul>
 <li><strong>Account information</strong> — your email address, password (stored securely by our authentication provider), and the display name you choose.</li>
-<li><strong>Content you create</strong> — photos, voice recordings and their transcriptions, written notes, parts and teardown documentation, and the labels/QR codes you record while using the app.</li>
+<li><strong>Content you create</strong> — photos, short videos with sound, voice recordings and their transcriptions, written notes, parts and teardown documentation, and the labels/QR codes you record while using the app.</li>
+<li id="location"><strong>Location when you scan a part</strong> — when you scan a part's QR sticker in the app and you have allowed location, the phone's location at that moment, how accurate it was, and the time, saved with your name on that part's scan history. Location is used only while you are using the app, never in the background, and only at the moment of a scan. If you do not allow location, the scan is saved without it. A part's scan history is visible only to the people in your shop who can open that part.</li>
 <li><strong>Basic usage data</strong> — information needed to operate the app, such as which account created or changed a record.</li>
 <li><strong>Error reports</strong> — when something fails in the app, a report of what went wrong so we can fix it: the error message and where in the app it happened, the app and update version, whether the phone runs iOS or Android, and the job or part file involved.</li>
 <li><strong>Notification token</strong> — if you allow notifications, a push token for your phone so the app can send them to you. If you do not allow notifications, no token is collected.</li>
 </ul>
+<h3 id="on-device">Handled on your phone, not collected</h3>
+<ul>
+<li><strong>Hands-free entry (speech)</strong> — the app asks its questions with your phone's own text-to-speech and listens with your phone's own speech recognition. Where the phone can recognise speech on the device, it does so and the audio never leaves the phone. Where it cannot, the phone's built-in recognition service (Apple's or Google's, under their terms) may process the audio. ReFitIQ does not record or upload that audio; only the part details you confirm are saved, as text.</li>
+<li><strong>Face ID / Touch ID / fingerprint sign-in</strong> — if you turn it on in Settings, your password is kept encrypted on your phone, locked behind the phone's own biometric check, so you can sign in without typing it. Your face or fingerprint is checked by the phone; ReFitIQ never receives it and nothing about it is sent to us. Turning the setting off, or deleting your account, removes the stored password from the phone.</li>
+</ul>
 <h2>How we use it</h2>
 <p>We use this information solely to provide and operate the app — to store your documentation, sync it across your shop's account, and let your team access the records they are permitted to see. We do not use your information for advertising, and we do not sell it.</p>
 <h2>Where it is stored</h2>
-<p>Your data is stored using Supabase, our database and hosting provider, on secured infrastructure. We share information only with service providers that help us operate the app, and only as needed to do so. Voice recordings are sent to OpenAI, which turns them into text for us. Notifications are delivered through Expo's push notification service, which passes them to Apple or Google to reach your phone.</p>
+<p>Your data is stored using Supabase, our database and hosting provider, on secured infrastructure. We share information only with service providers that help us operate the app, and only as needed to do so. We do not share location with anyone outside your shop. Voice notes are sent to OpenAI, which turns them into text for us (hands-free answers are not; see above). Notifications are delivered through Expo's push notification service, which passes them to Apple or Google to reach your phone.</p>
 <h2 id="account-deletion">Deleting your account and data</h2>
 <p>This section applies to <strong>ReFitIQ</strong>, the mobile app provided by <strong>Bradshaw Automation</strong>. You can delete your account either from inside the app or by emailing us; you do not need to have the app installed.</p>
 
@@ -49,12 +55,13 @@ h2[id]{scroll-margin-top:16px}
 <ul>
 <li>Your sign-in: email address, password and login sessions.</li>
 <li>Your display name.</li>
+<li>The locations saved when you scanned parts, together with those scan records.</li>
 <li>Your membership of any shop, and your assignments to individual jobs.</li>
 <li>Push notification tokens for the devices you signed in on, so those devices stop receiving notifications.</li>
 </ul>
 
 <h3>What is kept, and why</h3>
-<p>ReFitIQ is a shared record for a workshop. The photos, voice notes and transcriptions, part files, jobs, areas and fastener records created in the app are the <strong>shop's</strong> documentation of its own work, not personal files, and other people on the same jobs rely on them.</p>
+<p>ReFitIQ is a shared record for a workshop. The photos, videos, voice notes and transcriptions, part files, jobs, areas and fastener records created in the app are the <strong>shop's</strong> documentation of its own work, not personal files, and other people on the same jobs rely on them.</p>
 <p>So this content is <strong>not</strong> deleted when you delete your account. What is removed is the link between it and you: the records stay with the shop and your personal account is detached from them. Documentation that belongs to your shop's shared records may be retained by the shop so its work history stays intact.</p>
 <p>If you want particular content removed as well as your account, say so in your email and we will work out with the shop's administrator what can be deleted without destroying records other people depend on.</p>
 <p>We do not currently publish a fixed retention period for a shop's documentation. It is kept for as long as the shop keeps its account, and it is the shop — not Bradshaw Automation — that decides when its own records are no longer needed.</p>
